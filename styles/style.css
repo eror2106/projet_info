@@ -23,7 +23,8 @@ ul {
 nav>ul>div>a {
   font-size: 1.1em;
 
-  margin-left: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
   flex: none;
   text-decoration: none;
   color: white;
@@ -45,4 +46,11 @@ article {
 .img_article {
   width: 200px;
   height: 100px;
+}
+
+
+
+footer {
+  background-color: #6A35F0;
+  padding: 5%;
 }
