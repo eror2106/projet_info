@@ -1,20 +1,26 @@
-*{
-  margin: 0;
-  padding: 0;
+nav>ul>div {
+  padding: 0px;
+  margin: 0px;
   width: 100%;
 }
 
-div{
-  transform: rotate(-10deg);
-  width: 100%;
+ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #6A35F0;
+  /*
+  padding: 1%; */
 }
 
-img{
-  display: absolute;
-  width: 120%;
-  margin-left: -20%;
-  height: 20%;
-  margin-top: -30% !important;
-  /* overflow: hidden; */
 
+nav>ul>div>a {
+  /* font-size: 1.1em; */
+  /* margin-left: 1%; */
+  text-decoration: none;
+  color: white;
 }
+
+/* 
+.end {
+  margin-left: 80%;
+} */
