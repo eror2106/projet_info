@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+div{
+  transform: rotate(-10deg);
+  width: 100%;
+}
+
+img{
+  display: absolute;
+  width: 120%;
+  margin-left: -20%;
+  height: 20%;
+  margin-top: -30% !important;
+  /* overflow: hidden; */
+
+}
