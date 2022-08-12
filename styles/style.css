@@ -35,17 +35,34 @@ nav>ul>div>a {
   margin-left: 80%;
 }
 
+.lien_article {
+  text-decoration: none;
+  color: #4E3870;
+}
+
 article {
   border: 1px solid #4E3870;
+  border-radius: 8px;
   margin: 10%;
+
   margin-top: 5%;
   display: flex;
   flex-direction: row;
 }
 
+article>p {
+  /* padding: 2%; */
+  align-self: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+
+}
+
 .img_article {
-  width: 200px;
-  height: 100px;
+  border-radius: 8px;
+  width: 400px;
+  height: 200px;
 }
 
 

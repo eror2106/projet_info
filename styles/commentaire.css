@@ -1,0 +1,22 @@
+.zone_commentaire {
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  margin-bottom: 1%;
+  border: 2px solid #4E3870;
+}
+
+#btncomment {
+  background-color: #4E3870;
+  color: white;
+  cursor: pointer;
+  padding: 1%;
+  border: none;
+  font-size: 1.1em;
+  z-index: 1;
+  margin-left: -145px;
+  height: 50px;
+  margin-top: 50px;
+}
