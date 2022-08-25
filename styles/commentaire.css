@@ -20,3 +20,10 @@ textarea {
   height: 50px;
   margin-top: 50px;
 }
+
+.commentaire {
+  display: flex;
+  justify-content: center;
+
+  font-size: 1.2em;
+}

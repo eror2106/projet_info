@@ -4,9 +4,7 @@
 <head>
   <link rel="icon" type="image/x-icon" href="/img/lens-g2541588f5_1280.png">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>home</title>
@@ -29,27 +27,22 @@
 
 <body>
   <!-- navbar  -->
-  <nav>
-    <ul>
-      <div class="">
-        <a href="#">home</a>
-        <a href="#">article</a>
-        <a href="#">top</a>
-      </div>
-
-      <div class="end">
-        <a href="">login</a>
-        <a href="#">register</a>
-      </div>
-
-    </ul>
-  </nav>
+  <?php
+  include 'nav_bar.php';
+  include 'connexion_php/connexion.php';
+  ?>
   <div class="image_presentation">
     <img class="presentation" src="img/keyboard-g4be0dd1b4_1920.jpg" alt="image de presentation">
 
   </div>
   <!-- liste aarticle
    -->
+
+  <?php
+
+  ?>
+
+
   <a class="lien_article" href="#">
     <article>
       <img class="img_article" src="img/th-466078382.jpg" alt="picture not loaded">
