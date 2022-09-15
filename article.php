@@ -37,8 +37,17 @@
     <img class="presentation" src="img/keyboard-g4be0dd1b4_1920.jpg" alt="image de presentation">
 
   </div>
+  <?php
 
-  <p>le long texte de larticle </p>
+  include 'connexion_php/connexion.php';
+  $requette = "SELECT * FROM `information`";
+  $sql = $db->query($requette);
+  $information = $sql->fetchAll(PDO::FETCH_ASSOC);
+  foreach ($information as $sqle) { ?>
+    <h1><?php echo $sqle['nom']; ?></h1><?php
+                                      }
+                                        ?>
+  <p><?php echo $sqle['article']; ?> </p>
 
 
 

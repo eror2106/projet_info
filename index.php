@@ -35,28 +35,30 @@
     <img class="presentation" src="img/keyboard-g4be0dd1b4_1920.jpg" alt="image de presentation">
 
   </div>
-  <!-- liste aarticle
-   -->
 
   <?php
 
+  include 'connexion_php/connexion.php';
+  $requette = "SELECT * FROM `information`";
+  $sql = $db->query($requette);
+  $information = $sql->fetchAll(PDO::FETCH_ASSOC);
+  foreach ($information as $sqle) { ?>
+
+
+
+    <a class="lien_article" href="article?id=<?= $sqle['id'] ?>">
+      <article>
+        <img class="img_article" src="img/th-466078382.jpg" alt="picture not loaded">
+
+        <br>
+        <p><?php echo $sqle['nom']; ?></p>
+      </article>
+    </a>
+
+
+
+  <?php }
   ?>
-
-
-  <a class="lien_article" href="#">
-    <article>
-      <img class="img_article" src="img/th-466078382.jpg" alt="picture not loaded">
-
-      <br>
-      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular
-        web
-        browser since January, 2018.</p>
-    </article>
-  </a>
-
-
-
-
   <!-- footer -->
   <footer>
     <table>
