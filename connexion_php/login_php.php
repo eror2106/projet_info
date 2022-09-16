@@ -6,21 +6,21 @@ $information = $sql->fetchAll(PDO::FETCH_ASSOC);
 var_dump($information);
 
 try {
-
+  //si identifiant correct
   foreach ($information as $selector) {
     if ($_POST['email'] == $selector['email']) {
-      echo  $selector['email'];
       if ($_POST['mdp'] == $selector['mdp']) {
-        echo  $selector['mdp'];
+        header('Location: ../index.php');
       }
     }
   }
+  //si identifiant ou mdp incorecte
 
   if ($_POST['email'] != $selector['email']) {
-    echo 'non';
+    header('Location: ../login.php');
   }
   if ($_POST['mdp'] != $selector['mdp']) {
-    echo 'mpu';
+    header('Location: ../login.php');
   }
 } catch (Exception $ex) {
 }
