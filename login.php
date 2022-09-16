@@ -32,18 +32,17 @@
   <!-- navbar  -->
   <?php
   include 'nav_bar.php';
-
   ?>
   <div class="image_presentation">
     <img class="presentation" src="img/keyboard-g4be0dd1b4_1920.jpg" alt="image de presentation">
 
   </div>
-  <form action="" method="post" class="colone">
+  <form action="connexion_php/login_php.php" method="post" class="colone">
     <label for="">email</label>
-    <input type="text">
+    <input name="email" type="text">
     <label for="">mot de passe</label>
-    <input type="password">
-    <input type="submit">
+    <input name="mdp" type=" password">
+    <input name="submit" type="submit">
   </form>
 
   <!-- footer -->

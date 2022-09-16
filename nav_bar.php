@@ -2,7 +2,6 @@
   <ul>
     <div class="">
       <a href="index.php">home</a>
-      <a href="article.php">article</a>
       <a href="#">top</a>
     </div>
 
